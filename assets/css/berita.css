@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDEwfHxub3R1cmV8ZW58MHx8fHwxNjY0MjY0MjA0&ixlib=rb-1.2.1&q=80&w=1920') no-repeat center center/cover;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    transition: transform 0.5s ease; /* Menambahkan transisi */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    transition: opacity 0.5s ease; /* Menambahkan transisi */
+}
+
+/* Section Titles */
+h2 {
+    margin: 40px 0 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #343a40;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Gallery Styles */
+#galeri img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Menambahkan transisi */
+}
+
+#galeri img:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100%;
+    transition: background-color 0.3s ease; /* Menambahkan transisi */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Mengubah warna latar belakang saat hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #6c757d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}

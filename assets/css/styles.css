@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    background: url('https://cdn1-production-images-kly.akamaized.net/xeEe_CDGaj6UNnXsQJuOu-t9FaI=/1200x675/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3367642/original/032855000_1612360276-WhatsApp_Image_2021-02-02_at_9.38.24_AM.jpeg') no-repeat center center/cover;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    transition: transform 0.5s ease; /* Menambahkan transisi */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    transition: opacity 0.5s ease; /* Menambahkan transisi */
+}
+
+/* Section Titles */
+h2 {
+    margin: 40px 0 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #343a40;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Gallery Styles */
+#galeri img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Menambahkan transisi */
+}
+
+#galeri img:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100%;
+    transition: background-color 0.3s ease; /* Menambahkan transisi */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Mengubah warna latar belakang saat hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #6c757d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
